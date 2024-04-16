@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<title>sayac</title>
+<style>
+    table{
+        border: 5px solid rgb(255, 0, 187);
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    td{
+        border: 3px solid rgb(20, 6, 6);
+
+    }
+</style>
+</head>
+<body>
+    <table>
+    <tr>
+        <td>sütun1</td>
+        <td>sütun2</td>
+        <tr>
+            <td id="puan1">0</td>
+            <td id="puan2">0</td>
+        </tr>
+        <td>
+            <button id="ekle1">+1</button>
+        </td>
+        <td>
+            <button id="ekle2">+1</button>
+        </td>
+    </tr>
+</table>
+<script>
+    let sütun1 =0;
+    let sütun2 =0;
+    document.querySelector('#ekle1').onclick = function(){
+        sütun1 = sütun1+1;
+        document.querySelector('#puan1').innerHTML = sütun1;
+    }
+
+    document.querySelector('#ekle2').onclick = function(){
+        sütun2 = sütun2+1;
+        document.querySelector('#puan2').innerHTML = sütun2;
+    }
+
+</script>
+</body>
+</html> 
